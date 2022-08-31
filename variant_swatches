@@ -1,0 +1,16 @@
+$('.in_lab span').click(function(){
+
+    var imagee = $(this).attr('data-img');
+    var parent = $(this).parents('.card-wrapper');
+
+//     console.log(parent.html());
+
+    var  image_tag = parent.find('.card__media').find('img.motion-reduce');
+  
+//   console.log('src:  '+ image_tag.attr('src'));
+
+    image_tag.attr('src',imagee);
+  image_tag.attr('srcset',imagee);
+    
+    
+});
